@@ -117,9 +117,9 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "S" :
-					if (1) {
+					if ($i == 0 || $i == 1 && $j == 0 || $i == 2 && $j == 0 || $i == 3 || $i == 4 && $j == 7 || $i == 5 && $j == 7 || $i == 6) {
 						$colorToDisplay = $color;
-						$vowelToDisplay = $letter;
+						$letterToDisplay = $letter;
 					}
 					break;
 				case "T" :
