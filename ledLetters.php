@@ -52,7 +52,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "H" :
-					if (1) {
+					if ($i == 3 || $i == 4 || $j == 0 || $j == 1 || $j == 6 || $j == 7) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
