@@ -9,15 +9,22 @@ function drawLetter($letter, $color) {
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
+<<<<<<< HEAD
+					if ($i < 2 || $j < 2 || $j > 5 || $i == 4) {
+=======
 					if ($i < 2 || $j < 2 || $j == 4) {
+>>>>>>> 0041d5da357b06dd3091552ae479434c19aca479
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "B" :
 					if (1) {
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
+						if($i==0 || $j==0 ||  $j==1 || $i==7 || $j == 7 || $i == 3 || $i == 4){
+							$colorToDisplay = $color;
+							$letterToDisplay = $letter;
+							
+						}
 					}
 					break;
 				case "C" :
@@ -28,7 +35,7 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "D" :
-					if (1) {
+					if ($j < 2 || ($j < 5 && ($i < 2 || $i > 5)) || (($j == 6 || $j == 7) && ($i > 1 && $i < 6)) || ($j == 5 && $i == 1) || ($j == 5 && $i == 6)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -161,7 +168,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "T" :
-					if (1) {
+					if ($i < 2 || $i == 1 || $j == 4 || $j == 3) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -179,7 +186,12 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "W" :
-					if (1) {
+					if (($i < 3 && $j == 0) || (($i < 6 && $i >= 3) 
+					&& $j == 1) || (($i < 9 && $i >= 6) && ($j == 2 
+					|| $j == 6)) || ($i < 6 && $i >= 4) && ($j == 3 
+					|| $j == 5) || ($i == 3 && $j == 4) ||($i < 6) 
+					&& $j == 7) 
+					{
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -260,7 +272,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "7" :
-					if (1) {
+					if ($i == 0 || $j == 8 - $i - 1) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
@@ -276,7 +288,8 @@ function drawLetter($letter, $color) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
-					break;					
+					break;	
+					
 			}  //endSwitch
 			
 			if ($colorToDisplay == "rainbow") {
