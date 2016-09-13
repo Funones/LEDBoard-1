@@ -9,7 +9,11 @@ function drawLetter($letter, $color) {
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if ($i < 2 || $j < 2 || $j == 4) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -21,7 +25,12 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "C" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if($i < 2 || $i > 5 || $j < 2)
+					{
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
@@ -45,19 +54,31 @@ function drawLetter($letter, $color) {
 					}	
 					break;
 				case "G" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if ($j < 2 || ($j > 5 && $i > 3)|| $i < 2 || ($j > 3 && $i < 5 && $i > 2) || $i > 5 || ($j > 6 && $i > 5)) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "H" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if ($i == 3 || $i == 4 || $j == 0 || $j == 1 || $j == 6 || $j == 7) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "I" :
+<<<<<<< HEAD
 					if ($i==1 or $i==7 or $j==3 or $j==4) {
+=======
+					if (1) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -99,19 +120,68 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "P" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if ($i < 2 || $j < 2 || $i==4 || ($i < 5 && $j >= 6) ) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
 					break;
 				case "Q" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if(($i == 1 || $i == 6) && $j >1 && $j < 6)
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif(($i == 0 || $i == 7) && $j >2 && $j < 5)
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i == 2 && ($j == 1 || $j == 6))
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i>2 && $i < 4 && ($j < 2 || $j > 5))
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i>3 && $i < 5 && ($j < 2 || $j > 5))
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i ==  5 && ($j == 1 || $j == 6))
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i == 4 && $j == 4)
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i == 5 && $j == 5)
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i == 6 && $j == 6)
+					{
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}elseif($i == 7 && $j == 7)
+					{
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "R" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if ($i == 0 || $j == 0 || $i == 3|| ($j == 7 && $i < 4) || ($i == $j && $i > 3)) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -129,10 +199,18 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "U" :
+<<<<<<< HEAD
 					if (1) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
+=======
+					if ($i > 5 || $j < 2 || $j > 5) {
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					break;
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 				case "V" :
 					if (1) {
 						$colorToDisplay = $color;
@@ -146,10 +224,19 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "X" :
+<<<<<<< HEAD
 					if (1){
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
+=======
+					if (($i == 0&& $j== 0)|| ($i == 1&& $j== 1)||($i == 2&& $j== 2)||($i == 3&& $j== 3)||($i == 4&& $j== 4)||($i == 5&& $j== 5)||($i == 6&& $j== 6)||($i == 7&& $j== 7)||($i == 8&& $j== 8)||($i == 0&& $j== 7)||($i == 1&& $j== 6)||($i == 2&& $j== 5)||($i == 3&& $j== 4)||($i == 4&& $j== 3)||($i == 5&& $j== 2)||($i == 6&& $j== 1)||($i == 7&& $j== 0))
+					{ 
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 					break;
 				case "Y" :
 					if (1) {
@@ -176,7 +263,11 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "1" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if (($j == 3 || $j == 4 || $i == 7) || ($j == 2 && $i == 1) || ($j == 1 && $i == 1)) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -184,7 +275,11 @@ function drawLetter($letter, $color) {
 				case "2" :
 					if (1) {
 						$colorToDisplay = $color;
+<<<<<<< HEAD
 						$letterToDisplay = $letter;
+=======
+						$letterToDisplay = $letter; 
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 					}					
 					break;
 				case "3" :
@@ -194,7 +289,11 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "4" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if (($i < 4 && $j < 2) || $i == 4 || $i == 3 || $j == 6 || $j == 7) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -224,7 +323,11 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "9" :
+<<<<<<< HEAD
 					if (1) {
+=======
+					if ($i == 0 || ($j == 0 && $i < 4) || $i == 3 || $j == 7) {
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -246,4 +349,8 @@ function drawLetter($letter, $color) {
 	} //endFor rows
 	echo "</table>";
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 5d7c38a233b5b556d887f10e292b4f619816f058
