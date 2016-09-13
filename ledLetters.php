@@ -168,7 +168,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "T" :
-					if (1) {
+					if ($i < 2 || $i == 1 || $j == 4 || $j == 3) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
