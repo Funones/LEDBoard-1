@@ -180,8 +180,8 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "W" :
-					if ((($i == 4) && ($j == 4  $j == 3)) || ($i < 3 && ($j == 0 || $j == 7)) || (($j == 1 || $j == 6) && ($i >= 3 && $i < 5)) ||(($j == 2 || $j == 5) && ($i >= 5))){
-
+					if ((($i == 4 && ($j == 4 ||  $j == 3)) || ($i < 3 && ($j == 0 || $j == 7)) || (($j == 1 || $j == 6) && ($i >= 3 && $i < 5)) ||(($j == 2 || $j == 5) && ($i >= 5))))
+					{	
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
