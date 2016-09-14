@@ -170,7 +170,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "?" :
-					if (1)//($i < 1 || $j == 7 && $i< 3 || $i==3 || $i == 4 && $j == 0|| $i==5 && $j==0 || $i == 7 && $j==0) 
+					if (1)
 					{
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
