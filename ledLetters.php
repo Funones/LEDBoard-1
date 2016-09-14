@@ -1,7 +1,7 @@
 <?php
 function drawLetter($letter, $color) {
 	$letter = strtoupper($letter);
-	echo "<table border = 1>";
+	echo "<table border = 7>";
 	for ($i = 0; $i < 8; $i++) {//Controls rows
 		echo "<tr>";
 		for ($j = 0; $j < 8; $j++) {//Controls columns
@@ -63,7 +63,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "J" :
-					if (1) {
+					if ($i < 2 || $j == 3||$j==4 || $i==7 && $j < 4|| $i==6 && $j < 4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
@@ -170,7 +170,8 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "?" :
-					if (1) {
+					if (1)//($i < 1 || $j == 7 && $i< 3 || $i==3 || $i == 4 && $j == 0|| $i==5 && $j==0 || $i == 7 && $j==0) 
+					{
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
