@@ -9,16 +9,9 @@ function drawLetter($letter, $color) {
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
-<<<<<<< HEAD
-					if ($i < 2 || $j < 2 || $j > 5 || $i == 4) {
 
-=======
-<<<<<<< HEAD
-					if ($i < 2 || $j < 2 || $j > 5 || $i == 4) {
-=======
 					if ($i < 2 || $j < 2 || $j == 4) {
->>>>>>> origin/master
->>>>>>> 0b7c1923287fbc4d849242b647a5a1d6be5479d0
+
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -101,6 +94,18 @@ function drawLetter($letter, $color) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
+					if ($j == 0 || $j == 7) {
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					if ($j == 0 || $j > 1 || $i == 1 ) {
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}
+					/*if ($j < 1 || $j > 2 || $i == 2 ) {
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}*/
 					break;
 				case "O" :
 					if (1) {
