@@ -9,13 +9,13 @@ function drawLetter($letter, $color) {
 		    $letterToDisplay = "";
 			switch($letter) {
 				case "A" :
-					if ($i < 2 || $j < 2 || $j > 5 || $i == 4) {
+					if ($i < 2 || $j < 2 || $j == 4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "B" :
-					if (1) {
+					if ($i==0 || $j==0 ||  $j==1 || $i==7 || $j == 7 || $i == 3 || $i == 4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -28,19 +28,19 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "D" :
-					if (1) {
+					if (!($i > 6 && $j > 6) && !($i == 0 && $j > 6) && ($i < 2 || $i > 5 || $j < 2 || $j > 5)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "E" :
-					if (1) {
+					if ($i < 1 || $j < 1 || $i > 6 || $i < 4 && $i > 2) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
 					break;
 				case "F" :
-					if (1) {
+					if ($i < 2 || $j < 2 || $j > 7 || $i == 3 || $i == 4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}	
@@ -70,31 +70,34 @@ function drawLetter($letter, $color) {
 					}					
 					break;
 				case "K" :
-					if (1) {
+					if  ($j== 0 || $j==1 || $j==2 && $i == 3 || $j==2 && $i == 4 || $j==3 && $i == 4 || $j==3 && $i ==3  || $j==5 && $i == 2  || $j==4 && $i == 2  || $j==5 && $i == 1  || $j==6 && $i == 1 ||  $j==7 && $i == 0 ||  $j==6 && $i == 0
+					|| $j==4 && $i == 5 || $j==5 & $i == 5 || $j==6 & $i == 6 || $j==5 & $i == 6 || $j==7 & $i == 7 || $j==6 & $i == 7) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "L" :
-					if (1) {
+					if ($j < 2 || $i > 5) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "M" :
-					if ($j == 0 || $j == 7 || $i < 4 && $i == $j || $i == 1 && $j == 6 || $i == 2 && $j == 5 || $i == 3 && $j == 4) {
+					if (!($i == 0 && $j == 3) && !($i == 0 && $j == 4) && !($i > 2 && $j > 1) 
+					&& !($i == 2 && $j == 2) && !($i == 2 && $j == 5) || ($i > 2 && $j > 5) 
+					|| ($i == 3 && $j == 3) || ($i == 3 && $j == 4)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "N" :
-					if (1) {
+					if ($j<1||$j>6||$i==1&&$j<2||$i==2&&$j==2||$i==3&&$j==3||$i==4&&$j==4||$i==5&&$j==5||$i==6&&$j==6) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
 					break;
 				case "O" :
-					if (1) {
+					if (($i < 2 || $i > 5 || $j < 2 || $j > 5)) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -194,7 +197,10 @@ function drawLetter($letter, $color) {
 					
 					break;
 				case "Y" :
-					if (1) {
+					if ($j==3 && $i > 2 || $j ==4 && $i > 2 || $j == 2 && $i == 3 || $j == 1 && $i == 2 ||$j == 0 && $i == 1
+					||$j == 0 && $i == 0 ||$j == 1 && $i == 1 || $j == 2 && $i == 2	|| $j == 1 && $i == 1 || $j == 5 && $i == 3 ||
+					$j == 5 && $i == 2 || $j == 1 && $i == 1 || $j == 6 && $i == 2 || $j == 6  && $i == 1 || $j == 7 && $i == 1
+					|| $j == 7 && $i == 0) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
@@ -213,12 +219,6 @@ function drawLetter($letter, $color) {
 					break;
 				case "?" :
 					if (1) {
-						$colorToDisplay = $color;
-						$letterToDisplay = $letter;
-					}					
-					break;
-					case "#" :
-					if ($i == 1 || $i == 2 || $i == 5 || $i == 6 || $j == 1 || $j == 2 || $j == 5 || $j == 6) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}					
