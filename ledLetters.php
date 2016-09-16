@@ -60,7 +60,7 @@ function drawLetter($letter, $color) {
 					}
 					break;
 				case "I" :
-					if ($i==1 or $i==7 or $j==3 or $j==4) {
+					if ($i==0 or $i==7 or $j==3 or $j==4) {
 						$colorToDisplay = $color;
 						$letterToDisplay = $letter;
 					}
