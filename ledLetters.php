@@ -225,6 +225,12 @@ function drawLetter($letter, $color) {
 						$letterToDisplay = $letter;
 					}					
 					break;
+				case "#" :
+					if ($i == 1 || $i == 2 || $i == 5 || $i == 6 || $j == 1 || $j == 2 || $j == 5 || $j == 6) {
+						$colorToDisplay = $color;
+						$letterToDisplay = $letter;
+					}					
+					break;
 				case "1" :
 					if (($j == 3 || $j == 4 || $i == 7) || ($j == 2 && $i == 1) || ($j == 1 && $i == 1)) {
 						$colorToDisplay = $color;
